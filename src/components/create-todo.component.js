@@ -76,6 +76,7 @@ export default class CreateTodo extends Component {
                                 className="form-control"
                                 value={this.state.todo_description}
                                 onChange={this.onChangeTodoDescription}
+                                required
                                 />
                     </div>
                     <div className="form-group">
@@ -84,6 +85,7 @@ export default class CreateTodo extends Component {
                                 className="form-control"
                                 value={this.state.todo_responsible}
                                 onChange={this.onChangeTodoResponsible}
+                                required
                                 />
                     </div>
                     <div className="form-group">
@@ -95,6 +97,7 @@ export default class CreateTodo extends Component {
                                     value="Low"
                                     checked={this.state.todo_priority==='Low'}
                                     onChange={this.onChangeTodoPriority}
+                                    required
                                     />
                             <label className="form-check-label">Low</label>
                         </div>
@@ -106,6 +109,7 @@ export default class CreateTodo extends Component {
                                     value="Medium"
                                     checked={this.state.todo_priority==='Medium'}
                                     onChange={this.onChangeTodoPriority}
+                                    required
                                     />
                             <label className="form-check-label">Medium</label>
                         </div>
@@ -117,6 +121,7 @@ export default class CreateTodo extends Component {
                                     value="High"
                                     checked={this.state.todo_priority==='High'}
                                     onChange={this.onChangeTodoPriority}
+                                    required
                                     />
                             <label className="form-check-label">High</label>
                         </div>
